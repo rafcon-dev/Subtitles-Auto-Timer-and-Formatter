@@ -8,7 +8,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SubtitlesReborn", "WindowsF
 		{F4A7CCFF-3855-4F01-A146-4BE677B5FC4A} = {F4A7CCFF-3855-4F01-A146-4BE677B5FC4A}
 	EndProjectSection
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FolderSelect", "..\Folder Selector\FolderSelect.csproj", "{F4A7CCFF-3855-4F01-A146-4BE677B5FC4A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FolderSelect", "Folder Selector\FolderSelect.csproj", "{F4A7CCFF-3855-4F01-A146-4BE677B5FC4A}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -52,8 +52,8 @@ Global
 		{F4A7CCFF-3855-4F01-A146-4BE677B5FC4A}.Release|Mixed Platforms.Build.0 = Release|x86
 		{F4A7CCFF-3855-4F01-A146-4BE677B5FC4A}.Release|x64.ActiveCfg = Release|x64
 		{F4A7CCFF-3855-4F01-A146-4BE677B5FC4A}.Release|x64.Build.0 = Release|x64
-		{F4A7CCFF-3855-4F01-A146-4BE677B5FC4A}.Release|x86.ActiveCfg = Release|Any CPU
-		{F4A7CCFF-3855-4F01-A146-4BE677B5FC4A}.Release|x86.Build.0 = Release|Any CPU
+		{F4A7CCFF-3855-4F01-A146-4BE677B5FC4A}.Release|x86.ActiveCfg = Release|x86
+		{F4A7CCFF-3855-4F01-A146-4BE677B5FC4A}.Release|x86.Build.0 = Release|x86
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
