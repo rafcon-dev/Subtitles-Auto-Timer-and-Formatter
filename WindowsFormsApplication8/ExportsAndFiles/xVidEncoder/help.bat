@@ -1,0 +1,1 @@
+xvid_encraw.exe -help 2> help.txt

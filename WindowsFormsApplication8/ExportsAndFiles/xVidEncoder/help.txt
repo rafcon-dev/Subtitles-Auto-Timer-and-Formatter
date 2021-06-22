@@ -1,0 +1,99 @@
+xvid_encraw built at 15:35:18 on Mar  4 2015
+Usage : xvid_encraw [OPTIONS]
+
+Input options:
+ -i      string  : input filename (stdin)
+ -type   integer : input data type (yuv=0, pgm=1, avi/avs=2) (0)
+ -w      integer : frame width ([1.4096])
+ -h      integer : frame height ([1.4096])
+ -csp    string  : colorspace of raw input file i420, yv12 (default)
+ -frames integer : number of frames to encode (all)
+
+Output options:
+ -dump           : save decoder output
+ -save           : save an Elementary Stream file per frame
+ -o      string  : save an Elementary Stream for the complete sequence
+ -avi    string  : save an AVI file for the complete sequence
+
+Rate control options:
+ -framerate        float      : target framerate (auto)
+ -bitrate          [integer]  : target bitrate in kbps (700)
+ -size             integer    : target size in kilobytes
+ -single                      : single pass mode (default)
+ -cq               float      : single pass constant quantizer
+ -pass1            [filename] : twopass mode (first pass)
+ -full1pass                   : perform full quality first pass (disabled)
+ -pass2            [filename] : twopass mode (2nd pass)
+ -max_key_interval integer    : maximum keyframe interval (300)
+ -zones            [zones]    : use `-help zones' for usage guidelines
+ -zq     starting_frame float : bitrate zone; quant
+ -zw     starting_frame float : bitrate zone; weight
+
+Single Pass options:
+ -reaction         integer    : reaction delay factor (16)
+ -averaging        integer    : averaging period (100)
+ -smoother         integer    : smoothing buffer (100)
+
+Second Pass options:
+ -kboost           integer    : I frame boost (10)
+ -kthresh          integer    : I frame reduction threshold (1)
+ -kreduction       integer    : I frame reduction amount (20)
+ -ostrength        integer    : overflow control strength (5)
+ -oimprove         integer    : max overflow improvement (5)
+ -odegrade         integer    : max overflow degradation (5)
+ -chigh            integer    : high bitrate scenes degradation (0)
+ -clow             integer    : low bitrate scenes improvement (0)
+ -overhead         integer    : container frame overhead (0)
+ -vbvsize          integer    : use vbv buffer size
+ -vbvmax           integer    : vbv max bitrate
+ -vbvpeak          integer    : vbv peak bitrate over 1 second
+
+BFrames options:
+ -max_bframes      integer    : max bframes (2)
+ -bquant_ratio     integer    : bframe quantizer ratio (150)
+ -bquant_offset    integer    : bframe quantizer offset (100)
+
+Other options
+ -noasm                       : do not use assembly optimized code (use)
+ -turbo                       : use turbo presets for higher encoding speed (don't use)
+ -quality          integer    : quality ([0..6]) (6)
+ -vhqmode          integer    : level of R-D optimizations ([0..4]) (1)
+ -bvhq                        : use R-D optimizations for B-frames (don't use)
+ -metric           integer    : distortion metric for R-D opt (PSNR:0, PSNRHVSM:1) (0)
+ -qpel                        : use quarter pixel ME (don't use)
+ -gmc                         : use global motion compensation (don't use)
+ -qtype            integer    : quantization type (H263:0, MPEG4:1) (0)
+ -qmatrix          filename   : use custom MPEG4 quantization matrix
+ -interlaced       [integer]  : interlaced encoding (BFF:1, TFF:2) (1)
+ -nopacked                    : disable packed B-frames mode (enabled)
+ -noclosed_gop                : disable closed GOP mode (enabled)
+ -masking          [integer]  : HVS masking mode (None:0, Lumi:1, Variance:2) (0)
+ -stats                       : print stats about encoded frames (don't print)
+ -ssim             [integer]  : print ssim for every frame (accurate: 0 fast: 4) (2)
+ -ssim_file        filename   : output the ssim stats into a file
+ -psnrhvsm                    : print PSNRHVSM metric for every frame (don't print)
+ -debug            integer    : activate xvidcore internal debugging output (don't activate)
+ -vop_debug                   : print some info directly into encoded frames (don't print)
+ -nochromame                  : disable chroma motion estimation (enabled)
+ -notrellis                   : disable trellis quantization (enabled)
+ -imin             integer    : minimum I Quantizer (1..31) (2)
+ -imax             integer    : maximum I quantizer (1..31) (31)
+ -bmin             integer    : minimum B Quantizer (1..31) (2)
+ -bmax             integer    : maximum B quantizer (1..31) (31)
+ -pmin             integer    : minimum P Quantizer (1..31) (2)
+ -pmax             integer    : maximum P quantizer (1..31) (31)
+ -drop             integer    : frame Drop Ratio (0..100) (0)
+ -start            integer    : starting frame number (0)
+ -threads          integer    : number of threads (auto)
+ -slices           integer    : number of slices (1)
+ -progress         [integer]  : show progress updates every n frames (10)
+ -par       integer[:integer] : set Pixel Aspect Ratio (1)
+                                1 = 1:1
+                                2 = 12:11 (4:3 PAL)
+                                3 = 10:11 (4:3 NTSC)
+                                4 = 16:11 (16:9 PAL)
+                                5 = 40:33 (16:9 NTSC)
+                            other = custom (width:height)
+ -help                        : print this help message
+
+NB: You can define up to 64 zones via both the -zones and the -z[qw] options as needed.
