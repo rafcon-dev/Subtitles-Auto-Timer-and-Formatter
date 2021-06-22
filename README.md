@@ -1,6 +1,6 @@
 # Subtitles Auto Timer and Formatter
 <p align="center">
-<img src="preview.png">
+<img src="preview.png" width="70%">
   </p>
 
 An old program to automatically take a video script, and create timed and formatted subtitles from it.
