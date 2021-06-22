@@ -5,7 +5,7 @@
 
 An old program to automatically take a video script, and create timed and formatted subtitles from it.
 
-It takes as input the video, and based on the difference between frames and audio, tries to find the best subtitles formatting and timing.
+It takes as input the video, and based on the difference between frames and audio, tries to fit in the subtitles with the best formatting and timing it can.
 
 Was useful when youtube still didn't do this kind of stuff automatically, and machine learning wasn't really a thing (circa 2015). It's pretty much abandonware at this point.
 
